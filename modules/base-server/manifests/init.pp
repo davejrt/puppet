@@ -6,4 +6,11 @@ class base-server {
 		group => 'git',
 		mode => '755',
 		}
+
+        file { '/usr/local/bin/pull-updates':
+                source => 'puppet:///modules/base-server/pull-updates',
+                owner => 'git',
+                group => 'git',
+                mode => '755',
+                }
 }
