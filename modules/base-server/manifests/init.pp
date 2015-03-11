@@ -1,5 +1,5 @@
 class base-server {
-	
+	include sudoers
 	file { '/usr/local/bin/papply':
 		source => 'puppet:///modules/base-server/papply',
 		owner => 'git',

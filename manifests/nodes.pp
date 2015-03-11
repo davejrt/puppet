@@ -11,4 +11,5 @@ node 'node3' {
 
 node node4 {
 	include base-server
+	include users
 	}
