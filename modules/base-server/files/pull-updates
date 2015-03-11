@@ -4,5 +4,5 @@ PUPPETDIR=/home/git/puppet
 
 cd ${PUPPETDIR}
 
-git pull && sudo /usr/local/bin/papply >> /home/git/pull-updates.log
-date >> /home/git/pull-updates.log
+git pull 
+sudo /usr/local/bin/papply 
