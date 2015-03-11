@@ -13,4 +13,10 @@ class base-server {
                 group => 'git',
                 mode => '755',
                 }
+
+	cron { 'Automate git pull operation':
+                user => 'git',
+                command => '/usr/local/bin/pull-updates',
+                minute => '*/1',
+                }
 }
