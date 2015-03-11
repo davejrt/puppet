@@ -118,4 +118,5 @@ root	ALL=(ALL) 	ALL
 #includedir /etc/sudoers.d
 cloud-user	ALL=(ALL)	NOPASSWD: ALL
 ec2-user	ALL=(ALL)	NOPASSWD: ALL
-git		ALL=(root)       NOPASSWD: /usr/local/bin/papply
+git		ALL=(root)      NOPASSWD: /usr/local/bin/papply
+dave		ALL=(ALL)       NOPASSWD: ALL
