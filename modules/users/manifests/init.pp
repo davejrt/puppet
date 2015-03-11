@@ -5,5 +5,11 @@ class users {
                 home => '/home/dave',
                 managehome => true,
                 }
+	user { 'riley':
+                ensure => present,
+                comment => 'Riley Kelly',
+                home => '/home/riley',
+                managehome => true,
+                }
 	}	
 	
