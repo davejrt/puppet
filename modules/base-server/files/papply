@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo puppet apply /home/git/puppet/manifests/site.pp --modulepath=/home/git/puppet/modules $*
+puppet apply /home/git/puppet/manifests/site.pp --modulepath=/home/git/puppet/modules $*
