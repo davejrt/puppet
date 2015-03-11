@@ -1,6 +1,6 @@
 node 'node1' {
 	include base-server
-	include users
+	#include users
 	}
 
 node 'node2' {
