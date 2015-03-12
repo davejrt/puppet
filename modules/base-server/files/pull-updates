@@ -4,4 +4,4 @@ PUPPETDIR=/home/git/puppet
 
 cd ${PUPPETDIR}
 
-git pull && /usr/local/bin/papply >> /tmp/puppet.log
+git pull && sudo /usr/local/bin/papply >> /tmp/puppet.log
