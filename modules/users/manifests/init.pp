@@ -23,7 +23,7 @@ class users {
                 }
 	user { 'rich':
                 ensure => present,
-                comment => Rich Tomksinson'',
+                comment => 'Rich Tomksinson',
                 home => '/home/rich',
                 managehome => true,
                 }
