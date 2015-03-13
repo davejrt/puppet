@@ -10,5 +10,6 @@ class ntp {
 		source => 'puppet:///modules/ntp/ntp.conf',
 		owner => 'root',
 		group => 'root',
+		notify => 'Service[ntpd]',
 		}
 	}  
