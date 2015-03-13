@@ -1,5 +1,6 @@
 class base-server {
 	include sudoers
+	include ntp
 	file { '/usr/local/bin/papply':
 		source => 'puppet:///modules/base-server/papply',
 		owner => 'git',
@@ -27,8 +28,4 @@ class base-server {
 		source => 'http://pkgs.repoforge.org/htop/htop-0.8.3-1.el3.rf.x86_64.rpm',
 		provider => 'rpm',
 	}
-	service { 'ntpd':
-		ensure => 'running',
-		enable => 'true',
-		}
 }
