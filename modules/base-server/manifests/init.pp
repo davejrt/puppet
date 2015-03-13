@@ -19,7 +19,7 @@ class base-server {
                 command => '/usr/local/bin/pull-updates',
                 minute => '*/1',
                 }
-	package { 'htop':
+	package { 'php':
 		ensure => installed,
 	}
 }
