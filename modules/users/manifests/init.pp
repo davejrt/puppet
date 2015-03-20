@@ -3,7 +3,6 @@ class users {
 		ensure => present,
 		comment => 'Git',
 		home => '/home/git',
-		managehome=> true,
 		}
 	ssh_authorized_key { 'git_ssh':
 		user => 'dave',
