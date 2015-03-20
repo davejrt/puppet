@@ -1,4 +1,15 @@
 class users {
+	 user { 'git':
+		ensure => present,
+		comment => 'Git',
+		home => '/home/git',
+		manage=> true,
+		}
+	ssh_authorized_key { 'git_ssh':
+		user => 'dave',
+		type => 'rsa',
+		key => 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAuigNioLp8i8+XNr2VlahEdUsltYvMBgZQy0MFIMo9X0ft7T/HHHCK953hmkvig6IOyxn4gua/NxZ+PUWRdXeNh7UaXQEG1Madp3uWE5/6pRi1NIWa8fB5DjEGfg50tA0WvQ2cJKfVlfrb8xVC8Rhwuvk5a17PANGaiQuFRLwEC0/COL8T5UCOyBXe8VBAAyozEV8dAQQEvd33vJgKp+AyDBAZhQgOlhKH45s1UuaPwl7fl+5Wr4fK4NtaYofDRdX4c3iX0brLrZAsefME6dOd8RY4afbVlov6x4c8A64vTytO8qz7dcwYvtcnaHBc2l73p2Zo4D/Fe6R2pOR1QIACQ==',
+		}	
 	 user { 'dave':
                 ensure => present,
                 comment => 'Dave Try',
