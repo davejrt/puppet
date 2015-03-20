@@ -2,6 +2,7 @@ class base-server {
 	include sudoers
 	include ntp
 	file { '/usr/local/bin/papply':
+		ensure => present,
 		source => 'puppet:///modules/base-server/papply',
 		owner => 'git',
 		group => 'git',
@@ -9,10 +10,13 @@ class base-server {
 		}
 
         file { '/usr/local/bin/pull-updates':
+		ensure => present,
                 source => 'puppet:///modules/base-server/pull-updates',
                 owner => 'git',
                 group => 'git',
                 mode => '755',
+		require => File['/usr/local/bin/papply'],
+
                 }
 
 	cron { 'Automate git pull operation':
