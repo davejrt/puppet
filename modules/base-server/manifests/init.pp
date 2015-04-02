@@ -1,6 +1,7 @@
 class base-server {
 	include sudoers
 	include ntp
+	include splunk
 	file { '/usr/local/bin/papply':
 		ensure => present,
 		source => 'puppet:///modules/base-server/papply',
