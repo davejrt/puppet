@@ -1,0 +1,24 @@
+[inputs/monitor%3A%2F%2F%2Flogs%2Fhttpd]
+owner = splunk-system-user
+version = 6.2.1
+modtime = 1427952891.184746000
+
+[inputs/monitor%3A%2F%2F%2Flogs%2Fmonit]
+owner = splunk-system-user
+version = 6.2.1
+modtime = 1427952963.155388000
+
+[inputs/monitor%3A%2F%2F%2Flogs%2Ftomcat7]
+owner = splunk-system-user
+version = 6.2.1
+modtime = 1427953062.691407000
+
+[inputs/monitor%3A%2F%2F%2Flogs%2Fpuppet]
+owner = splunk-system-user
+version = 6.2.1
+modtime = 1427953076.832684000
+
+[inputs/monitor%3A%2F%2F%2Flogs%2Fapp]
+owner = admin
+version = 6.2.1
+modtime = 1427957925.080261000
