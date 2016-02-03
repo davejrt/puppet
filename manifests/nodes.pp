@@ -4,6 +4,7 @@
 node 'node1' {
 	include base-server
 	include users
+	include ntp
 	}
 
 node 'node2' {
